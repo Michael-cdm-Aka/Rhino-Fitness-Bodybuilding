@@ -1,0 +1,92 @@
+/* .container{
+    background: url(slide1.jpg);
+} */
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set font family and font size */
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Style header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header .logo {
+    height: 50px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style main sections */
+  main section {
+    padding: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  main section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  main section p {
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  main section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  /* Style footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    header nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
