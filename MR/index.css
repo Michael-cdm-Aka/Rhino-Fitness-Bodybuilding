@@ -26,6 +26,10 @@
     color: #fff;
   }
   
+  cname{
+    font-size: 25px;
+  }
+
   header .logo {
     height: 50px;
   }
