@@ -1,6 +1,7 @@
-/* .container{
-    background: url(slide1.jpg);
-} */
+.container{
+    background: url();
+    border-image: fill 0 linear-gradient(#0001, #000);
+}
 /* Reset default styles */
 * {
     margin: 0;
