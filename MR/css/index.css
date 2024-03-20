@@ -26,9 +26,13 @@
     color: #fff;
   }
   
-  cname{
+  /* .cname{
     font-size: 25px;
-  }
+  } */
+  
+  /* .logo img{
+    width: 100px;
+  } */
 
   header .logo {
     height: 50px;
