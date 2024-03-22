@@ -1,8 +1,3 @@
-.container {
-  background: url();
-  border-image: fill 0 linear-gradient(#0001, #000);
-}
-
 /* Reset default styles */
 * {
   margin: 0;
@@ -23,17 +18,19 @@ header {
   background-image: url("../images/Downpic.cc-1786373799.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   color: #fff;
 }
 .logo{
-  padding-left: 2rem;
-  display: flex;
+  padding-right: 2rem;
+  /* display: flex; */
 }
 
 .logo img {
   width: 70px;
+  padding-top: 10px;
+  align-items: center;
 }
 
 nav {
@@ -43,11 +40,10 @@ nav {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  align-items: center;
 }
 
 nav ul {
-  display: flex;
+  /* display: flex; */
   list-style: none;
   gap: 20px;
 }
@@ -65,11 +61,13 @@ nav ul {
   cursor: pointer;
 }
 
-.navul li a{
+.nav ul li a{
   text-decoration: none;
   color: black;
   font-weight: 500;
+  
 }
+
 
 
 
@@ -107,8 +105,27 @@ footer {
 /* Style media queries for responsive design */
 @media screen and (max-width: 768px) {
   header {
+    display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #333;
+    color: #fff;
   }
+  
+   .cname{
+    font-size: 25px;
+  } 
+  
+   .logo img{
+    width: 100px;
+  } 
 
   header nav ul {
     flex-direction: column;
@@ -118,5 +135,13 @@ footer {
   header nav ul li {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header nav a:hover {
+    color: #ddd;
   }
 }
