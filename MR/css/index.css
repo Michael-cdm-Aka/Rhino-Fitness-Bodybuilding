@@ -20,7 +20,7 @@ body {
 /* Style header */
 header {
   height: 100dvh;
-  background-image: url("../images/trainee.jpg");
+  background-image: url("../images/Downpic.cc-1786373799.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
@@ -52,9 +52,17 @@ nav ul {
   gap: 20px;
 }
 .navul li{
-  background-color: rgba(255, 255, 255, 0.704);
+  background-color: rgb(255, 255, 255);
   border-radius: 2rem;
   padding: 10px 15px;
+  cursor: pointer;
+}
+.navul li:hover{
+  background-color: rgba(0, 0, 0, 0.935);
+  color: white;
+  border-radius: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .navul li a{
