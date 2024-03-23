@@ -19,46 +19,67 @@ header {
   border-image: fill 0 linear-gradient(#0001, #000);
   background-repeat: no-repeat;
   background-size: cover;
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  justify-content: space-between;
   color: #fff;
 }
+}
+
+.header nav{
+    display: flex;
+    background: #234C64;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu{
+    display: none;
+}
+
+#menu2{
+    display: none;
+    max-width: 300px;
+    min-width: 100px;
+    width: 100%;
+    position: absolute;
+    background-color: #234C64;
+    /* background-color: aqua; */
+    right: 0;
+    top: 70px;
+    border-radius: 5px;
+}
+
+.header li{
+    margin: 10px auto;
+    width: 90%;
+    list-style: none;
+}
+
+.header li a{
+    display: block;
+    width:100%;
+    color: white;
+    text-decoration: none;
+    background: rgb(183, 133, 86);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header li a:hover, .header li .active{
+    background-color: antiquewhite;
+    color: black;    
+}
+
+
 .logo{
   padding-right: 2rem;
-  /* display: flex; */
+  display: flex;
 }
 
 .logo img {
   width: 70px;
   padding-top: 10px;
   align-items: center;
-}
-
-nav {
-  height: fit-content;
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.088);
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-}
-
-nav ul {
-  /* display: flex; */
-  list-style: none;
-  gap: 20px;
-}
-.nav ul li{
-  /* background-color: rgba(255, 255, 255, 0.704); */
-  border-radius: 2rem;
-  padding: 10px 15px;
-}
-
-.nav ul li a{
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  
 }
 
 
@@ -72,7 +93,7 @@ main section {
 
 main section h2 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   color: #333;
 }
 
@@ -99,14 +120,11 @@ footer {
 @media screen and (max-width: 768px) {
   header {
     display: flex;
-    flex-direction: column;
-    position: absolute;
+    flex-direction: row;
     top: 100%;
     left: 0;
-    width: 100%;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    text-align: right;
     border-top: 1px solid #ddd;
     background-color: #333;
     color: #fff;
@@ -122,16 +140,14 @@ footer {
 
   header nav ul {
     flex-direction: column;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   header nav ul li {
-    margin-right: 0;
+    /* margin-right: 0; */
     margin-bottom: 10px;
   }
   header nav a {
-    color: #fff;
-    text-decoration: none;
   }
 
   header nav a:hover {
