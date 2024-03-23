@@ -14,9 +14,8 @@ body {
 
 /* Style header */
 header {
-  height: 200px;
-  background: url(../images/trainee.jpg);
-  border-image: fill 0 linear-gradient(#0001, #000);
+  height: 100dvh;
+  background-image: url("../images/Downpic.cc-1786373799.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
@@ -82,6 +81,44 @@ header {
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+nav {
+  height: fit-content;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.088);
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  /* display: flex; */
+  list-style: none;
+  gap: 20px;
+}
+.navul li{
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.navul li:hover{
+  background-color: rgba(0, 0, 0, 0.935);
+  color: white;
+  border-radius: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  
+}
+
+>>>>>>> e8001a2f081f0e6dd6ae0c986366bd09bf25a336
 
 
 
